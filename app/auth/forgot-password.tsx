@@ -95,7 +95,7 @@ export default function ForgotPasswordScreen() {
               <TextInput
                 style={[styles.input, error && styles.inputError]}
                 value={email}
-                onChangeText={(text) => {
+                onChangeText={(text: string) => {
                   setEmail(text);
                   setError('');
                 }}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, ViewStyle } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import type { ViewStyle } from 'react-native/types';
 
 interface SafeAreaWrapperProps {
   children: React.ReactNode;

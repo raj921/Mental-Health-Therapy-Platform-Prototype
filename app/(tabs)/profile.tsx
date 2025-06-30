@@ -41,7 +41,8 @@ export default function ProfileScreen() {
           onPress: async () => {
             try {
               await authService.logout();
-              // The auth listener will handle navigation automatically
+              // Explicitly navigate to login screen after successful logout
+              router.replace('/auth/login');
             } catch (error) {
               Alert.alert('Error', 'Failed to sign out. Please try again.');
             }

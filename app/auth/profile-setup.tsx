@@ -84,8 +84,8 @@ export default function ProfileSetupScreen() {
                 <TextInput
                   style={styles.input}
                   value={emergencyContact.name}
-                  onChangeText={(text) =>
-                    setEmergencyContact(prev => ({ ...prev, name: text }))
+                  onChangeText={(text: string) =>
+                    setEmergencyContact((prev: typeof emergencyContact) => ({ ...prev, name: text }))
                   }
                   placeholder="Enter contact's full name"
                 />
@@ -96,8 +96,8 @@ export default function ProfileSetupScreen() {
                 <TextInput
                   style={styles.input}
                   value={emergencyContact.phone}
-                  onChangeText={(text) =>
-                    setEmergencyContact(prev => ({ ...prev, phone: text }))
+                  onChangeText={(text: string) =>
+                    setEmergencyContact((prev: typeof emergencyContact) => ({ ...prev, phone: text }))
                   }
                   placeholder="+1 (555) 123-4567"
                   keyboardType="phone-pad"
@@ -109,8 +109,8 @@ export default function ProfileSetupScreen() {
                 <TextInput
                   style={styles.input}
                   value={emergencyContact.relationship}
-                  onChangeText={(text) =>
-                    setEmergencyContact(prev => ({ ...prev, relationship: text }))
+                  onChangeText={(text: string) =>
+                    setEmergencyContact((prev: typeof emergencyContact) => ({ ...prev, relationship: text }))
                   }
                   placeholder="e.g., Spouse, Parent, Sibling"
                 />
